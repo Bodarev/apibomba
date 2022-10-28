@@ -1,0 +1,10 @@
+{
+    "name" : "bomba/api",
+    "description" : "",
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-iconv": "*",
+        "elasticsearch/elasticsearch": "^7.17"
+    }
+}

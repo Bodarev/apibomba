@@ -1,0 +1,21 @@
+{
+	"name": "jquery.form-styler",
+	"version": "2.0.2",
+	"main": [
+		"dist/jquery.formstyler.js",
+		"dist/jquery.formstyler.css"
+	],
+	"description": "jQuery-плагин для стилизации элементов HTML-форм",
+	"keywords": [
+		"jquery",
+		"form",
+		"styler",
+		"dimox"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"*.txt",
+		"demo"
+	]
+}

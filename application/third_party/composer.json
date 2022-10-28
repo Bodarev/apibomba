@@ -1,0 +1,6 @@
+{
+    "require": {
+        "jasongrimes/paginator": "~1.0",
+        "drewm/mailchimp-api": "^2.5"
+    }
+}

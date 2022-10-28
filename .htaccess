@@ -1,0 +1,13 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+Options -Indexes
+
+RewriteCond $1 !^(index\.php|static|ckeditor|kcfinder|robots\.txt|public|dist|favicon.\ico)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+
+#AuthType Basic
+#AuthName "restricted area"
+#AuthUserFile /home/bombamd/seller.bomba.md/.htpasswd
+#require valid-user
