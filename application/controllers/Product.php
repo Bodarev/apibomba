@@ -31,8 +31,10 @@ class Product extends FrontEndController
         $lang = verify_language(@$params['lang']);
 
         $this->load->model('product_model');
-        $products = $this->product_model->get_products_by_ids($lang, $params['ids'], $params['limit']);
+        $sort = sprintf("FIELD(product.id, %s)", implode(', ', $params['ids']));
+        $products = $this->product_model->get_products_by_ids($lang, $params['ids'], $params['limit'], $sort);
         $product_ids = array_map(function($item) {return $item->id;}, $products);
+
 
         if($product_ids) {
             $labels = $this->db->select("product_id as product_id, name_$lang as title, color as color")->where_in("product_id", $product_ids)->get('product_label')->result();
